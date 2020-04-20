@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Person
 from .form import formPerson
 
+
 @login_required
 def persons_list(request):
     data = {}

@@ -6,7 +6,7 @@ from django.conf import settings
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path('home/',include(home_urls)),
+    path('',include(home_urls)),
     path('admin/', admin.site.urls),
     path('person/',include(Clients_urls)),
     path('login/', auth_views.LoginView.as_view(), name='url_login'),
